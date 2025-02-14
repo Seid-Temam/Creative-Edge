@@ -1,0 +1,152 @@
+@media (max-width: 340px) {
+  .about-text-box p:first-of-type {
+    margin-top: 5rem;
+  }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 600px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .cta {
+    padding-block: 10rem;
+  }
+  .cta h2 {
+    font-size: 3.5rem;
+  }
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .btn-secondary{
+    padding: 2rem 8rem;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .hero {
+    height: 100vh;
+  }
+  .about {
+    padding-block: 5rem;
+    /* background-color: #fff; */
+    position: relative;
+    height: 600px;
+  }
+  .about::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background-image: url('../img/about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 140rem;
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .about-text-box {
+    position: absolute;
+    width: 50%;
+    top: -10rem;
+  }
+}
+@media (min-width: 945px) {
+  .hero h1 {
+    font-size: 6rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+    ul {
+      display: flex;
+      gap: 5rem;
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
+
+  nav li {
+    position: relative;
+  }
+  nav a::before {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 4px;
+    background-color: #00ff6c;
+    position: absolute;
+    top: -2rem;
+  }
+  nav a:hover::before {
+    width: 100%;
+  }
+  .about-text-box {
+    width: 40%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  figure {
+    overflow: hidden;
+  }
+  figcaption {
+    transform: translateY(20rem);
+    padding: 5rem;
+    p {
+      font-size: 4rem;
+    }
+    a {
+      font-size: 2rem;
+    }
+  }
+
+  figure:hover figcaption {
+    transform: translateY(0);
+  }
+
+  footer {
+    padding: 6rem 3rem;
+  }
+  .footer-container {
+    grid-template-columns: repeat(5, 1fr);
+    padding-block: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    h3 {
+      font-size: 3rem;
+    }
+    p,
+    a,
+    address {
+      font-size: 2rem;
+    }
+
+    .social-links {
+      gap: 4rem;
+
+      i {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  header nav ul {
+    gap: 10rem;
+  }
+}
