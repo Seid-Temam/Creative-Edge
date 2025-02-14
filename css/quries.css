@@ -6,6 +6,19 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (max-width: 375px) {
+  .about-text-box {
+    h2 {
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+    p:first-of-type{
+      margin-top: 1rem;
+    }
+  }
+}
 @media (min-width: 600px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
@@ -22,7 +35,7 @@
   .footer-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  .btn-secondary{
+  .btn-secondary {
     padding: 2rem 8rem;
     font-size: 2rem;
   }
